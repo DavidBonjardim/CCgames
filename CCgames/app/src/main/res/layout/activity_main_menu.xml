@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <Button
+        android:id="@+id/buttonAddEmprestimo"
+        android:layout_width="156dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:text="Requisitar um jogo"
+        app:backgroundTint="#366500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewJogos" />
+
+    <Button
+        android:id="@+id/buttonViewJogos"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Lista de jogos"
+        app:backgroundTint="#366500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <Button
+        android:id="@+id/buttonViewEmprestimos"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Jogos requisitados"
+        app:backgroundTint="#366500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddEmprestimo" />
+
+    <ImageView
+        android:id="@+id/imageViewBandeiras"
+        android:layout_width="414dp"
+        android:layout_height="635dp"
+        android:layout_marginTop="180dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ludoteca_bandeiras_auto_x2_toned" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="417dp"
+        android:layout_height="395dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBandeiras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ludoteca_estufa" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="413dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="110dp"
+        android:text="Ludoteca da Estufa"
+        android:textAllCaps="true"
+        android:textColor="#8BC34A"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#366500"
+        app:iconTint="#ACFF4C"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBandeiras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVisitSite"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Visitar Site"
+        app:backgroundTint="#366500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewEmprestimos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
